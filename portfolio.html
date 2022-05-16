@@ -29,29 +29,29 @@
   <body>
     <header class="header">
       <div class="header container">
-        <a href="./index.html" class="top-logo link">
-          Web<span class="header-logo">Studio</span>
+        <a href="./index.html" class="logo top__logo link">
+          Web<span class="logo header__logo logo--black">Studio</span>
         </a>
-        <nav class="header-nav">
-          <ul class="header-nav-list list">
-            <li class="header-nav-links"><a href="./index.html" class="link">Студия</a></li>
-            <li class="header-nav-links"><a href="" class="link current">Портфолио</a></li>
-            <li class="header-nav-links"><a href="" class="link">Контакты</a></li>
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item"><a href="./index.html" class="menu-list__link link">Студия</a></li>
+            <li class="menu-list__item"><a href="" class="menu-list__link link current">Портфолио</a></li>
+            <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="header-contacts list">
-          <li class="header-contacts-item">
-            <a href="mailto:info@devstudio.com" class="header-email-second link"
-              ><svg class="email-second-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__email-second link"
+              ><svg class="contacts__icon-second" width="16" height="12">
                 <use href="./images/icons/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-item">
-            <a href="tel:+380961111111" class="header-tel-second link"
-              ><svg class="tel-second-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__tel-second link"
+              ><svg class="contacts__icon-second" width="10" height="16">
                 <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -287,63 +287,64 @@
     <footer class="footer">
       <div class="container">
         <div class="bottom-adress">
-          <a href="./index.html" class="bottom-logo link">
-            Web<span class="footer-logo">Studio</span>
+          <a href="./index.html" class="logo bottom__logo link">
+            Web<span class="logo footer__logo logo--white">Studio</span>
           </a>
           <address class="footer-address">
             <ul class="footer-list list">
-              <li class="footer-map">
+              <li class="footer-list__map">
                 <a
                   href="https://bit.ly/3pXMvUd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footer-map link"
+                  class="footer-list__map link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-email">
-                <a href="mailto:info@devstudio.com" class="footer-email link">info@example.com</a>
+              <li class="footer-list__email">
+                <a href="mailto:info@devstudio.com" class="footer-list__email link">info@example.com</a>
               </li>
-              <li class="footer-tel">
-                <a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a>
+              <li class="footer-list__tel">
+                <a href="tel:+380961111111" class="footer-list__tel link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <div class="join">
-          <p class="join-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <p class="join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
           <ul class="join-list">
-            <li class="join-image">
-              <a href="" class="join-link"
-                ><svg class="join-soc-icon" width="20" height="20">
+            <li class="join-list__image">
+              <a href="" class="join-list__link"
+                ><svg class="join-list__icon" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-image">
-              <a href="" class="join-link"
-                ><svg class="join-soc-icon" width="20" height="20">
+            <li class="join-list__image">
+              <a href="" class="join-list__link"
+                ><svg class="join-list__icon" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-image">
-              <a href="" class="join-link"
-                ><svg class="join-soc-icon" width="20" height="20">
+            <li class="join-list__image">
+              <a href="" class="join-list__link"
+                ><svg class="join-list__icon" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-image">
-              <a href="" class="join-link"
-                ><svg class="join-soc-icon" width="20" height="20">
+            <li class="join-list__image">
+              <a href="" class="join-list__link"
+                ><svg class="join-list__icon" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
         <form>
           <div class="mailing-list">
             <label class="mailing-label" for="mailing-email">Подпишитесь на рассылку</label>
@@ -366,8 +367,12 @@
             </button>
           </div>
         </form>
+        
       </div>
     </footer>
+
+    <!--Script-->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

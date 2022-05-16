@@ -42,6 +42,11 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -82,7 +87,7 @@ img {
   align-items: center;
 }
 
-.top-logo {
+.top__logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -96,22 +101,22 @@ img {
   padding-bottom: 25px;
 }
 
-.header-logo {
+.logo--black {
   color: var(--primary-text-color);
 }
 
-.header-nav-list {
+.menu-list {
   display: flex;
   margin-left: auto;
 }
 
-.header-nav-links {
+.menu-list__item {
   display: flex;
   position: relative;
   align-items: flex-end;
 }
 
-.header-nav-links > .link {
+.menu-list__item > .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -125,17 +130,17 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-links:not(:last-child) {
+.menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-nav-links > .link.current {
+.menu-list__item > .link.current {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
 
-.header-nav-links .link:hover,
-.header-nav-links .link:focus {
+.menu-list__item .link:hover,
+.menu-list__item .link:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
@@ -151,26 +156,26 @@ img {
   background-color: var(--accent-color);
 }
 
-.header-contacts {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.contacts .link:hover,
+.contacts .link:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
 
-.header-email-first,
-.header-email-second {
+.contacts__email-first,
+.contacts__email-second {
   margin-right: 50px;
 }
 
-.header-email-first,
-.header-tel-first,
-.header-email-second,
-.header-tel-second {
+.contacts__email-first,
+.contacts__tel-first,
+.contacts__email-second,
+.contacts__tel-second {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -186,10 +191,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-first-icon,
-.tel-first-icon,
-.email-second-icon,
-.tel-second-icon {
+.contacts__icon-first,
+.contacts__icon-second {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -209,7 +212,7 @@ img {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -225,7 +228,7 @@ img {
 
 /*-------------------------------HeroButton--------------------------*/
 
-.hero-button.primary {
+.hero__button.primary {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -248,17 +251,13 @@ img {
 }
 
 /*----------------------------------Peculiarities-------------------*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .peculiarities-image-list {
   display: flex;
   margin-bottom: 30px;
 }
 
-.peculiarities-image-item {
+.peculiarities-image-list__item {
   display: flex;
   width: 270px;
   height: 120px;
@@ -273,7 +272,7 @@ img {
   align-items: center;
 }
 
-.peculiarities-image-item:not(:last-child) {
+.peculiarities-image-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -281,11 +280,11 @@ img {
   display: flex;
 }
 
-.peculiarities-items:not(:last-child) {
+.peculiarities-list__items:not(:last-child) {
   margin-right: 30px;
 }
 
-.peculiarities-title {
+.peculiarities-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.13;
@@ -296,7 +295,7 @@ img {
   margin-bottom: 10px;
 }
 
-.peculiarities-desc {
+.peculiarities-list__desc {
   line-height: 1.71;
   color: var(--title-text-color);
 }
@@ -316,11 +315,11 @@ img {
   justify-content: center;
 }
 
-.work-image:not(:last-child) {
+.work-list__image:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -335,7 +334,7 @@ img {
   position: relative;
 }
 
-.work-text {
+.work-wrap__text {
   position: absolute;
   bottom: 0;
   font-weight: 700;
@@ -368,7 +367,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.command-title {
+.command__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -388,18 +387,18 @@ img {
   margin: 0;
 }
 
-.command-image:not(:last-child) {
+.command-list__image:not(:last-child) {
   margin-right: 30px;
 }
 
-.command-image {
+.command-list__image {
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.name-title {
+.command-list__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.12;
@@ -411,7 +410,7 @@ img {
   margin-bottom: 10px;
 }
 
-.speciality-user {
+.command-list__user {
   font-size: 16px;
   line-height: 1.12;
   text-align: center;
@@ -428,11 +427,11 @@ img {
   margin-bottom: 30px;
 }
 
-.command-soc-item + .command-soc-item {
+.command-soc-list__item + .command-soc-list__item {
   margin-left: 10px;
 }
 
-.command-soc-link {
+.command-soc-list__link {
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
@@ -445,15 +444,15 @@ img {
   transition: color 250ms, background-color 250ms;
 }
 
-.command-soc-link:hover,
-.command-soc-link:focus {
+.command-soc-list__link:hover,
+.command-soc-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
 /*--------------------------------Regular customers---------------------*/
 
-.customers-title {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -468,11 +467,11 @@ img {
   display: flex;
 }
 
-.customers-image + .customers-image {
+.customers-list__image + .customers-list__image {
   margin-left: 30px;
 }
 
-.customers-link {
+.customers-list__link {
   position: relative;
   width: 170px;
   height: 92px;
@@ -488,14 +487,14 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link::before {
+.customers-list__link::before {
   position: absolute;
   display: block;
   content: '';
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers-list__link:hover,
+.customers-list__link:focus {
   background-color: var(--primary-white-color);
   fill: var(--accent-color);
   border-color: var(--accent-color);
@@ -516,7 +515,7 @@ img {
   align-items: baseline;
 }
 
-.bottom-logo {
+.bottom__logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -528,7 +527,7 @@ img {
   margin-right: 156px;
 }
 
-.footer-logo {
+.logo--white {
   color: var(--primary-white-color);
 }
 
@@ -544,7 +543,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-map {
+.footer-list__map {
   line-height: 1.71;
   cursor: default;
   color: var(--primary-white-color);
@@ -554,14 +553,14 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-map .link:hover,
-.footer-map .link:focus {
+.footer-list__map .link:hover,
+.footer-list__map .link:focus {
   background-color: var(--secondary-background-color);
   color: var(--accent-color);
 }
 
-.footer-email,
-.footer-tel {
+.footer-list__email,
+.footer-list__tel {
   line-height: 1.71;
   cursor: default;
   color: rgba(255, 255, 255, 0.6);
@@ -570,19 +569,19 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-tel {
+.footer-list__tel {
   margin-bottom: 0;
 }
 
-.footer-email .link:hover,
-.footer-email .link:focus,
-.footer-tel .link:hover,
-.footer-tel .link:focus {
+.footer-list__email .link:hover,
+.footer-list__email .link:focus,
+.footer-list__tel .link:hover,
+.footer-list__tel .link:focus {
   background-color: var(--secondary-background-color);
   color: var(--accent-color);
 }
 
-.join-title {
+.join__title {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -596,11 +595,11 @@ img {
   list-style: none;
 }
 
-.join-image:not(:last-child) {
+.join-list__image:not(:last-child) {
   margin-right: 10px;
 }
 
-.join-link {
+.join-list__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -612,8 +611,8 @@ img {
   fill: var(--primary-white-color);
 }
 
-.join-link:hover,
-.join-link:focus {
+.join-list__link:hover,
+.join-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
