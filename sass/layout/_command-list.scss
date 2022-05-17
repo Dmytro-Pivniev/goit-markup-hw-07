@@ -22,13 +22,22 @@
     display: flex;
     list-style: none;
     justify-content: center;
-  
     padding: 0;
     margin: 0;
-  }
-  
-  .command-list__image:not(:last-child) {
-    margin-right: 30px;
+    &__image:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.12;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--primary-text-color);
+    
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
   }
   
   .command-list__image {
@@ -37,19 +46,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  
-  .command-list__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.12;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-  
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
+
   .command-list__user {
     font-size: 16px;
     line-height: 1.12;
@@ -63,29 +60,26 @@
   .command-soc-list {
     display: flex;
     justify-content: center;
-  
     margin-bottom: 30px;
+    &__link {
+      width: 44px;
+      height: 44px;
+      background-color: var(--primary-white-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: #afb1b8;
+    
+      transition: color 250ms, background-color 250ms;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: var(--accent-color);
+      fill: var(--primary-white-color);
+    }
   }
   
   .command-soc-list__item + .command-soc-list__item {
     margin-left: 10px;
-  }
-  
-  .command-soc-list__link {
-    width: 44px;
-    height: 44px;
-    background-color: var(--primary-white-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: #afb1b8;
-  
-    transition: color 250ms, background-color 250ms;
-  }
-  
-  .command-soc-list__link:hover,
-  .command-soc-list__link:focus {
-    background-color: var(--accent-color);
-    fill: var(--primary-white-color);
   }

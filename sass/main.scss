@@ -1,16 +1,19 @@
-@import "./utils/vars";
-@import "./utils/visually-hidden";
-
-
 @import "./base/common";
 @import "./base/reset";
 
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./components/container";
 @import "./components/top-logo";
+@import "./components/menu-list";
+@import "./components/contacts";
 @import "./components/bottom-logo";
+@import "./components/join";
+@import "./components/mailing-list";
 @import "./components/modal";
-
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -19,6 +22,5 @@
 @import "./layout/command-list";
 @import "./layout/regular-customers";
 @import "./layout/footer";
-
 @import "./layout/portfolio";
 @import "./layout/foto-progects";
